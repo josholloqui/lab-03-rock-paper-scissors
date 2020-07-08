@@ -1,0 +1,92 @@
+
+body {
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+    --color1: hsla(349, 69%, 76%, 1);
+    --color2: hsla(207, 67%, 44%, 1);
+    --color3: hsla(200, 61%, 56%, 1);
+    --color4: hsla(187, 41%, 94%, 1);
+    --color5: hsla(170, 28%, 95%, 1);
+
+    /* --color1: hsla(45, 86%, 83%, 1);
+    --color2: hsla(135, 65%, 98%, 1);
+    --color3: hsla(315, 37%, 86%, 1);
+    --color4: hsla(45, 73%, 98%, 1);
+    --color5: hsla(224, 40%, 79%, 1); */
+    
+    --header-height: 80px;
+    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --gutter: 30px;
+    --footer-height: 25px;
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--color2);
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 2fr 2fr .5fr 1fr;
+    height: 100%;
+    padding: 2em;
+}
+
+.header {
+    grid-column: 1 / span 4;
+    grid-row-start: 1;
+}
+
+.rules1 {
+    grid-column: 1 / span 2;
+    grid-row-start: 2;
+}
+
+.rules2 {
+    grid-column: 3 / span 2;
+    grid-row-start: 2;
+}
+
+.inputs {
+    grid-column: 1 / span 4;
+    grid-row-start: 3;
+    border: solid white;
+}
+
+.inputs {
+    display: flex;
+    padding: 1em;
+}
+
+.flex-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+input:checked + img {
+border: 10px solid rgb(218, 165, 32, 1);
+}
+
+img{
+    opacity: .5;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+.results {
+    grid-column: 1 / span 4;
+    grid-row-start: 5;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}

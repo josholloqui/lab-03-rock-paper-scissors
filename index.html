@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Thunder Dome</title>
+</head>
+
+<body>
+    <header>
+        <div class="gutter-right logo">
+            Game of Games
+        </div>
+    </header>
+    <main class="container">
+        <section class="header">
+            <h1>Welcome to the Thunder Dome</h1>
+        </section>
+        <section class="game-rules rules1">
+            <h2>Rules of the Game</h2>
+            <ul>
+                <li>You must choose one of the 3 objects below to battle</li>
+                <li>Once you've selected your object hit submit</li>
+                <li>When you submit you enage into battle with the computer to see who prevails</li>
+            </ul>
+        </section>
+        <section class="rules2">
+            <h2>Rules of Engagement</h2>
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beats Paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+        </section>
+        <section class="inputs">
+            <label class="flex-input">
+                Rock
+                <input type="radio" name="rps">
+                <img height="75%" width="75%" src="./rock.jpeg"/>
+            </label>
+            <label class="flex-input">
+                Paper
+                <input type="radio" name="rps">
+                <img height="75%" width="75%" src="./paper.jpeg"/>
+            </label>
+            <label class="flex-input">
+                Scissors
+                <input type="radio" name="rps">
+                <img height="75%" width="75%" src="./scissors.jpeg"/>
+            </label>
+        </section>
+        <section class="start-battle">
+            <button id="battle"></button>
+        </section>
+        <section class="results">
+            <div class="battles-won">
+                <h2>Battles Won</h2>
+                <span id="wins"></span>
+            </div>
+            <div class="battles-tied">
+                <h2>Battles Tied</h2>
+                <span id="wins"></span>
+            </div>
+            <div class="battles-lost">
+                <h2>Battles Lost</h2>
+                <span id="wins"></span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
