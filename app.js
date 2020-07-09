@@ -28,6 +28,7 @@ playButton.addEventListener('click', () => {
 
     // time to reveal the winner
     switch (checkResult(userThrow, computerThrow)) {
+        // Draw
         case 0:
             hideRules1.classList.add('hidden');
             resultsReveal.classList.remove('hidden');
@@ -37,6 +38,8 @@ playButton.addEventListener('click', () => {
             draws++;
             battleDraws.textContent = draws;
             break;
+
+        // Winner
         case 1:
             hideRules1.classList.add('hidden');
             resultsReveal.classList.remove('hidden');
@@ -46,6 +49,8 @@ playButton.addEventListener('click', () => {
             wins++;
             battleWins.textContent = wins;
             break;
+        
+        // Loss
         case 2:
             hideRules1.classList.add('hidden');
             resultsReveal.classList.remove('hidden');
