@@ -33,6 +33,8 @@ playButton.addEventListener('click', () => {
             hideRules1.classList.add('hidden');
             resultsReveal.classList.remove('hidden');
             drawReveal.classList.remove('hidden');
+            lossReveal.classList.add('hidden');
+            winReveal.classList.add('hidden');
             draws++;
             battleDraws.textContent = draws;
             break;
@@ -40,6 +42,8 @@ playButton.addEventListener('click', () => {
             hideRules1.classList.add('hidden');
             resultsReveal.classList.remove('hidden');
             winReveal.classList.remove('hidden');
+            drawReveal.classList.add('hidden');
+            lossReveal.classList.add('hidden');
             wins++;
             battleWins.textContent = wins;
             break;
@@ -47,6 +51,8 @@ playButton.addEventListener('click', () => {
             hideRules1.classList.add('hidden');
             resultsReveal.classList.remove('hidden');
             lossReveal.classList.remove('hidden');
+            winReveal.classList.add('hidden');
+            drawReveal.classList.add('hidden');
             losses++;
             battleLosses.textContent = losses;
             break;
