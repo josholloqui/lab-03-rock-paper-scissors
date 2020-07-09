@@ -80,6 +80,11 @@ img:hover {
     opacity: 1;
 }
 
+.start-battle {
+    grid-column: 1 / span 4;
+    grid-row-start: 4;
+}
+
 .results {
     grid-column: 1 / span 4;
     grid-row-start: 5;
@@ -89,4 +94,13 @@ img:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.results-msg {
+    grid-column: 1 / span 2;
+    grid-row-start: 2;
 }

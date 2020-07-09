@@ -22,7 +22,7 @@
         <section class="header">
             <h1>Welcome to the Thunder Dome</h1>
         </section>
-        <section class="game-rules rules1">
+        <section class="game-rules rules1 " id="game-rules-1">
             <h2>Rules of the Game</h2>
             <ul>
                 <li>You must choose one of the 3 objects below to battle</li>
@@ -41,22 +41,23 @@
         <section class="inputs">
             <label class="flex-input">
                 Rock
-                <input type="radio" name="rps">
+                <input type="radio" value="rock" name="rps">
                 <img height="75%" width="75%" src="./rock.jpeg"/>
             </label>
             <label class="flex-input">
                 Paper
-                <input type="radio" name="rps">
+                <input type="radio" value="paper" name="rps">
                 <img height="75%" width="75%" src="./paper.jpeg"/>
             </label>
             <label class="flex-input">
                 Scissors
-                <input type="radio" name="rps">
+                <input type="radio" value="scissors" name="rps">
                 <img height="75%" width="75%" src="./scissors.jpeg"/>
             </label>
         </section>
         <section class="start-battle">
             <button id="battle"></button>
+            <button id="reset"></button>
         </section>
         <section class="results">
             <div class="battles-won">
@@ -65,11 +66,22 @@
             </div>
             <div class="battles-tied">
                 <h2>Battles Tied</h2>
-                <span id="wins"></span>
+                <span id="draws"></span>
             </div>
             <div class="battles-lost">
                 <h2>Battles Lost</h2>
-                <span id="wins"></span>
+                <span id="losses"></span>
+            </div>
+        </section>
+        <section class="results-msg hidden" id="results-reveal">
+            <div class="hidden-win hidden" id="win-reveal">
+
+            </div>
+            <div class="hidden-draw hidden" id="loss-reveal">
+
+            </div>
+            <div class="hidden-draw hidden" id="draw-reveal">
+
             </div>
         </section>
     </main>
