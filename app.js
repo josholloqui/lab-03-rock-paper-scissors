@@ -12,6 +12,7 @@ const resultsReveal = document.getElementById('results-reveal');
 const winReveal = document.getElementById('win-reveal');
 const drawReveal = document.getElementById('draw-reveal');
 const lossReveal = document.getElementById('loss-reveal');
+const hideBattle = document.getElementById('hide-battle');
 
 // initialize global state
 let wins = 0;
@@ -29,6 +30,7 @@ playButton.addEventListener('click', () => {
     switch (checkResult(userThrow, computerThrow)) {
         // Draw
         case 0:
+            hideBattle.classList.add('hidden');
             resultsReveal.classList.remove('hidden');
             drawReveal.classList.remove('hidden');
             lossReveal.classList.add('hidden');
@@ -39,6 +41,7 @@ playButton.addEventListener('click', () => {
 
         // Winner
         case 1:
+            hideBattle.classList.add('hidden');
             resultsReveal.classList.remove('hidden');
             winReveal.classList.remove('hidden');
             drawReveal.classList.add('hidden');
@@ -49,6 +52,7 @@ playButton.addEventListener('click', () => {
         
         // Loss
         case 2:
+            hideBattle.classList.add('hidden');
             resultsReveal.classList.remove('hidden');
             lossReveal.classList.remove('hidden');
             winReveal.classList.add('hidden');
